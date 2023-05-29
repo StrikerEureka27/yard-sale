@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Navbar</title>
+</head>
+<style>
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --very-light-pink: #C7C7C7;
+        --very-dark-pink: #7f7f7f;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --sm: 12px;
+        --md: 16px;
+        --lg: 24px;
+    }
+
+    * {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    }
+
+    .ctn-navbar {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        display: flex;
+    }
+
+    .itm-navbar:nth-child(1){
+       margin-left: 2rem;
+    }
+
+    .ctn-list {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+    }
+
+    .itm-list {
+        margin: 1rem;
+    }
+
+    .primary-btn {
+        width: 2.5rem;
+        color: var(--hospital-green);
+        border-radius: 10px;
+        border: 1px solid var(--hospital-green);
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        background-color: var(--white);
+    }
+
+    .secondary-btn {
+        border: none;
+        cursor: pointer;
+        color: var(--very-dark-pink);
+        background-color: var(--white);
+    }
+
+    .cart-btn {
+        border: none;
+        background-color: var(--white);
+    }
+
+    .cart-btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    p {
+        color: var(--very-dark-pink);
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    select {
+        border: none;
+    }
+
+    .menu-btn {
+        border: none;
+        background-color: var(--white);
+    }
+
+    .menu-btn img{
+        width: 30px;
+        height: 30px;
+    }
+
+    @media(min-width: 1080px){
+        .menu-btn{
+            display: none;
+        }
+    }
+
+    @media(max-width: 1080px){
+
+        .ctn-list{
+            display: none;
+        }
+
+        .itm-navbar:nth-child(1){
+            margin: 0;
+        }
+
+        .itm-navbar:nth-child(4){
+            display: none;
+        }
+
+    }
+
+</style>
+
+<body>
+    <nav class="ctn-navbar">
+        <div class="itm-navbar" >
+           <button class="menu-btn">
+            <img src="./icons/icon_menu.svg" alt="">
+           </button>
+        </div>
+        <img class="itm-navbar logo-navbar" src="./assets/logo_yard_sale.svg" alt="">
+        <ul class="itm-navbar ctn-list">
+            <li class="itm-list">
+                <button class="primary-btn">All</button>
+            </li>
+            <li class="itm-list">
+                <button class="secondary-btn">Clothes</button>
+            </li>
+            <li class="itm-list">
+                <button class="secondary-btn">Electronics</button>
+            </li>
+            <li class="itm-list">
+                <button class="secondary-btn">Furniture</button>
+            </li>
+            <li class="itm-list">
+                <button class="secondary-btn">Toys</button>
+            </li>
+            <li class="itm-list">
+                <button class="secondary-btn">Others</button>
+            </li>
+        </ul>
+        <div class="itm-navbar">
+            <label>example@gmail.com
+                <select name="" id="">
+                    <option value=""></option>
+                </select>
+            </label>
+        </div>
+        <div class="itm-navbar">
+            <button class="cart-btn">
+                <img src="./icons/icon_shopping_cart_notification.svg" alt="">
+            </button>
+        </div>
+    </nav>
+</body>
+
+</html>

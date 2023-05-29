@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Product details</title>
+</head>
+<style>
+    /* Base colors */
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --very-light-pink: #C7C7C7;
+        --very-dark-pink: #7f7f7f;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --sm: 12px;
+        --md: 16px;
+        --lg: 24px;
+    }
+
+    * {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    }
+
+    .ctn {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .ctn-product {
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .itm-product img {
+        height: 450px;
+        border-radius: 0px 0px 25px 25px;
+        width: 100%;
+    }
+
+    .itm-product-element {
+        padding: 1rem;
+    }
+
+    .itm-product-element p {
+        text-align: left;
+        color: var(--very-dark-pink);
+    }
+
+    .primary-btn {
+        padding: 1rem;
+        width: 100%;
+        color: var(--white);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        background-color: var(--hospital-green);
+    }
+</style>
+
+<body>
+    <section class="ctn">
+        <section class="ctn-product">
+            <div class="itm-product">
+                <img src="https://picsum.photos/450?random=1" alt="">
+            </div>
+            <div class="itm-product">
+                <div class="itm-product-element">
+                    <h3>$ 120.00</h3>
+                    <p>Retro refrigerator</p>
+                </div>
+            </div>
+            <div class="itm-product">
+                <div class="itm-product-element">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio voluptates quasi
+                        obcaecati itaque soluta aliquam beatae blanditiis architecto neque velit mollitia, molestiae
+                        iste dolores, id sint nihil, vel impedit.</p>
+                </div>
+            </div>
+        </section>
+        <div class="">
+            <button class="primary-btn">Add to cart</button>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<style>
+    /* Base colors */
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --very-light-pink: #C7C7C7;
+        --very-dark-pink: #7f7f7f;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --sm: 12px;
+        --md: 16px;
+        --lg: 24px;
+    }
+
+    * {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    }
+
+    .ctn {
+        /* background-color: var(--very-dark-pink); */
+        justify-content: center;
+        display: flex;
+    }
+
+    .ctn-product {
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: var(--very-dark-pink); */
+        display: flex;
+    }
+
+    .itm-product:nth-child(1) {
+        margin: 2rem;
+    }
+
+    .ctn-grid {
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .itm-grid {
+        width: 250px;
+        height: 325px;
+        border-radius: 25px;
+        margin: 2rem;
+        background-color: var(--white);
+    }
+
+    .itm-grid-element {
+        margin-left: 1rem;
+    }
+
+    img {
+        margin-bottom: 1rem;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    input {
+        border: none;
+        border-radius: 10px;
+        height: 2rem;
+        outline: none;
+        width: 350px;
+        margin-bottom: 0.5rem;
+        background-color: var(--text-input-field);
+    }
+
+    input:focus {
+        border: 1px solid var(--very-dark-pink);
+    }
+
+    input::placeholder {
+        padding: 0.5rem;
+    }
+
+    h3 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    p {
+        color: var(--very-light-pink);
+        padding: 0;
+    }
+
+    .ctn-grid-footer {
+        margin: 0.2rem;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .btn-buy {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        background-color: var(--hospital-green);
+        display: flex;
+    }
+
+    .btn-buy img {
+        width: 45px;
+        height: 45px;
+        padding: auto;
+    }
+
+    .subtitle2 {
+        margin: 0;
+        margin-left: 1rem;
+        padding: 0;
+        font-size: var(--md);
+        font-weight: bold;
+    }
+
+    select {
+        border: none;
+    }
+
+    option {
+        border: none;
+    }
+
+    @media(max-width: 640px) {
+        .itm-grid {
+            width: 140px;
+            height: 225px;
+        }
+    }
+</style>
+
+<body>
+    <section class="ctn">
+        <section class="ctn-product">
+            <div class="itm-product">
+                <input type="text" placeholder="🔍 Search product">
+                <label class="subtitle2" for="">
+                    Order:
+                    <select name="" id="">
+                        <option value="">Most recent</option>
+                        <option value="">Most popular</option>
+                    </select>
+                </label>
+            </div>
+            <div class="itm-product">
+                <section class="ctn-grid">
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=1">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$ 39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=2">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$ 39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=3">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$ 39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=4">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$ 39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=5">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$ 39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=6">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$ 39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=7">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$ 39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=8">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="addcart">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=9">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="addcart">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=10">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="addcart">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=11">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="addcart">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itm-grid">
+                        <img class="" src="https://picsum.photos/300?random=12">
+                        <div class="ctn-grid-footer">
+                            <div class="itm-grid-footer">
+                                <h3 class="itm-grid-element">$39.00</h3>
+                                <p class="itm-grid-element">Round shell</p>
+                            </div>
+                            <div class="itm-grid-footer">
+                                <button class="btn-buy">
+                                    <img src="./icons/bt_add_to_cart.svg" alt="addcart">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
